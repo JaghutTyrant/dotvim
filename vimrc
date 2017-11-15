@@ -84,8 +84,9 @@ vnoremap > >gv " better indentation
 "" mkdir -p ~/.vim/colors && cd ~/.vim/colors "This are command line for terminal
 "" wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
+"color ron
 " color wombat256mod	" This is a recommended color scheme that i dont particullarily like
-color wombat256mod	" This is the default color scheme of vim
+"color wombat256mod	" This is the default color scheme of vim
 "color dracula " This is the default color scheme of vim
 " this is a test
 
