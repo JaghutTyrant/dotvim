@@ -152,9 +152,6 @@ execute pathogen#infect()
 
 " ###################### PYTHONG IDE SETUP ###################################
 
-" Settings for vim-powerline
-" cd ~/.vim/bundle
-" git clone git://github.com/lokaltog/vim-powerline.git
 set laststatus=2
 
 
