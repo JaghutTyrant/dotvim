@@ -86,7 +86,8 @@ vnoremap > >gv " better indentation
 set t_Co=256
 "color ron
 " color wombat256mod	" This is a recommended color scheme that i dont particullarily like
-"color wombat256mod	" This is the default color scheme of vim
+color wombat256mod	" This is the default color scheme of vim
+"color codeschool
 "color dracula " This is the default color scheme of vim
 " this is a test
 
