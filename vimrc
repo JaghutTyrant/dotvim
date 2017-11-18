@@ -149,6 +149,7 @@ set noswapfile
 " execute pathogen#infect()
 ""call pathogen#infect()
 execute pathogen#infect()
+call pathogen#helptags()
 
 " ###################### PYTHONG IDE SETUP ###################################
 
