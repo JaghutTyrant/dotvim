@@ -22,6 +22,9 @@ set bs=2	"supposedly fixes some backspace problem
 "Rebind leader key,	not useful for me right now as i dont know what the tuttorial means
 let mapleader = ","
 
+" Nerdtree Binding
+map <C-n> :NERDTreeToggle<CR>
+
 " Bind nohl
 " Removes  high light of your last search
 " noremap <C-n> :nohl<CR>
@@ -85,8 +88,10 @@ vnoremap > >gv " better indentation
 "" wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
 "color ron
-" color wombat256mod	" This is a recommended color scheme that i dont particullarily like
-color wombat256mod	" This is the default color scheme of vim
+" color wombat256mod	
+" color ron " This is the default color scheme of vim
+color inkpot
+" color grb256
 "color codeschool
 "color dracula " This is the default color scheme of vim
 " this is a test
