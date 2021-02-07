@@ -3,6 +3,7 @@
 " set virtualedit=onemore
 " Stop line splitting in vim
 set textwidth=0
+set wrapmargin=0
 "This enables number on the left side of the document
 set number
 " Automatic Reloading of .vimrc
@@ -12,7 +13,8 @@ autocmd! bufwritepost .vimrc source %
 " Better copy & paste
 
 set pastetoggle=<F2>
-set clipboard=unnamed
+" set clipboard=unnamed
+set clipboard=unnamedplus
 
 "Mouse & backspace
 
@@ -207,6 +209,18 @@ inoremap <silent><C-k> <C-R>=OmniPopup('k')<C-R>
 " the past 2 lines go together on one line on terminal one space in between them
 set nofoldenable
 
+""" START PERL FOLDING
+" mouse is on
+set mouse=a
+" folding
+set foldmethod=syntax
+set foldlevelstart=1
+let perl_fold=1
+let sh_fold_enabled=1
+let perl_extended_vars=1
+let perl_sync_dist=250
+""" END PERL FOLDING
+
 
 " Configuration to make Eclim work
 set nocompatible
@@ -220,4 +234,5 @@ set autoindent
 
 " Making powerline work
 set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+
 set laststatus=2
