@@ -12,7 +12,13 @@ autocmd! bufwritepost .vimrc source %
 " Better copy & paste
 
 set pastetoggle=<F2>
-set clipboard=unnamed
+"
+if !has('nvim')
+    " set ttymouse=xterm2
+    set clipboard=unnamed
+else
+    set clipboard+=unnamedplus " nvim only it seems?
+endif
 
 "Mouse & backspace
 
@@ -123,12 +129,21 @@ nmap Q gqap
 set history=700
 set undolevels=700
 
+set title " For Linux Kernel Hacking
 " Real programmers dont use TAB'S but spaces
-set tabstop=4 
-set softtabstop=4
-set shiftwidth=4
+" Python Setup 4-space tabs
+" set tabstop=4 
+" set softtabstop=4
+" set shiftwidth=4
+" Linux Kernel Setup 8-space tabs, other indentations are not accepted
+set tabstop=8
+set softtabstop=8
+set shiftwidth=8
+" The next 2 lines are general no matter how many spaces we use.
 set shiftround
-set expandtab
+" set expandtab
+" The Following is also recommended for Linux kernel hacking:
+set noexpandtab
 " Have read recommendations of this but better investigate
 " what each of this one's do exactly.
 
@@ -218,6 +233,9 @@ filetype plugin indent on
 " Set autoindent for all files
 set autoindent
 
-" Making powerline work
-set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
-set laststatus=2
+"""" Making powerline work
+"" set  rtp+=/home/shadowthrone/.local/lib/python3.9/powerline/bindings/vim/
+"" set laststatus=2
+
+"""" Making airline work
+let g:airline#extensions#tabline#enabled = 1
