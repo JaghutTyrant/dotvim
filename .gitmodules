@@ -19,3 +19,6 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe.git
+[submodule "bundle/perl-support"]
+	path = bundle/perl-support
+	url = https://github.com/WolfgangMehner/perl-support.git
