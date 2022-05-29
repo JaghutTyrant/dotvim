@@ -218,6 +218,17 @@ filetype plugin indent on
 " Set autoindent for all files
 set autoindent
 
+" Synstastic recommended starting settings from:
+" https://github.com/vim-syntastic/syntastic#installation
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " Making powerline work
 " set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 set  rtp+=/home/shadowthrone/.local/lib/python3.8/site-packages/powerline/bindings/vim/
