@@ -219,5 +219,6 @@ filetype plugin indent on
 set autoindent
 
 " Making powerline work
-set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+" set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+set  rtp+=/home/shadowthrone/.local/lib/python3.8/site-packages/powerline/bindings/vim/
 set laststatus=2
