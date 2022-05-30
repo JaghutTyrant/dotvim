@@ -220,6 +220,9 @@ set autoindent
 
 " Synstastic recommended starting settings from:
 " https://github.com/vim-syntastic/syntastic#installation
+" Also syntasic need syntax checker to be installed for the specific language
+" you want it to support, guide here: 
+" https://github.com/vim-syntastic/syntastic/blob/master/doc/syntastic-checkers.txt
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
