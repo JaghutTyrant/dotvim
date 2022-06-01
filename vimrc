@@ -139,13 +139,13 @@ set title " For Linux Kernel Hacking
 set tabstop=8
 set softtabstop=8
 set shiftwidth=8
-" The next 2 lines are general no matter how many spaces we use.
-set shiftround
 " set expandtab
 " The Following is also recommended for Linux kernel hacking:
 set noexpandtab
 " Have read recommendations of this but better investigate
 " what each of this one's do exactly.
+" The next line are general no matter how many spaces we use.
+set shiftround
 
 
 "Make search case insensitive
