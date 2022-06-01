@@ -123,12 +123,24 @@ nmap Q gqap
 set history=700
 set undolevels=700
 
+" CUSTOM TAB CONFIGURATION
+" TODO: TAB configuration depending on OS and usage (normal or kernel programming)
+" TODO: This needs to be more robust to work across different distros.
+let distro = system('cat /etc/*release* 2>/dev/null | grep DISTRIB_ID | cut -d= -f2')
+" Need to use trim(), because system does not only return what normal shell 
+" returns but also a new line and something that makes vim prompt for a keypress
+" to continue
+let distro = trim(distro) " removes unwanted bytes and leaves normal shell output
+" TODO: Add the configuration for Debian(Kernel Hacking) 
 " Real programmers dont use TAB'S but spaces
-set tabstop=4 
-set softtabstop=4
-set shiftwidth=4
-set shiftround
-set expandtab
+if distro ==? "LinuxMint"
+    " echo distro
+    set tabstop=4 
+    set softtabstop=4
+    set shiftwidth=4
+    set shiftround
+    set expandtab
+endif
 " Have read recommendations of this but better investigate
 " what each of this one's do exactly.
 
