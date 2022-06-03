@@ -238,6 +238,10 @@ set autoindent
 " Also syntasic need syntax checker to be installed for the specific language
 " you want it to support, guide here: 
 " https://github.com/vim-syntastic/syntastic/blob/master/doc/syntastic-checkers.txt
+"  When enabled this YouCompleteme setting will disable the C-family checkers in
+"  Syntastic, that is why we must unset it.
+let g:ycm_show_diagnostics_ui = 0
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -247,12 +251,16 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" Syntastic c-gcc checker specific configuration
+let g:syntastic_c_compiler = "gcc"
+let g:syntastic_c_remove_include_errors = 1
+
 " Making powerline work
 " set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 " set  rtp+=/home/shadowthrone/.local/lib/python3.8/site-packages/powerline/bindings/vim/
 " set laststatus=2
 
 """" Making airline work
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|'
