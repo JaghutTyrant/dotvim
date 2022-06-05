@@ -173,7 +173,6 @@ call pathogen#helptags()
 
 " ###################### PYTHONG IDE SETUP ###################################
 
-set laststatus=2
 
 
 " Settings for ctrlp
@@ -252,15 +251,32 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Syntastic c-gcc checker specific configuration
-let g:syntastic_c_compiler = "gcc"
 let g:syntastic_c_remove_include_errors = 1
+" let g:syntastic_c_no_default_include_dirs = 1
+let g:syntastic_c_compiler = "gcc"
+let g:syntastic_c_compiler_options = "-std=gnu89"
+let g:syntastic_c_checkers=['checkpatch']
+" let g:syntastic_c_no_default_include_dirs = 1
+" let g:syntastic_c_checkers=['gcc', 'checkpatch', 'sparse']
+" let g:syntastic_c_checkers=['checkpatch', 'sparse']
+"let g:syntastic_c_checkers=['sparse']
+" TODO: Create and test the sparse checker with a configuration file
+"  If gcc is to work with sparse the following 2 config lines are recommended
+" let g:syntastic_c_sparse_post_args="-gcc-base-dir " .
+"         \ system("gcc -v 2>&1 | sed -n '/^Reading specs/ { s#.* /#/#; s#/[^/]*$##; p; }'")
+" " let g:syntastic_c_checkers=['gcc', 'sparse']
+" let g:syntastic_c_checkers=['sparse', 'gcc']
 
+" END OF Synstastic Configuration
+"
 " Making powerline work
 " set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 " set  rtp+=/home/shadowthrone/.local/lib/python3.8/site-packages/powerline/bindings/vim/
-" set laststatus=2
 
 """" Making airline work
 " let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#tabline#left_sep = ' '
 " let g:airline#extensions#tabline#left_alt_sep = '|'
+" POWERLINE CONFIG
+" set  rtp+=/usr/lib/python3/dist-packages/powerline/bindings/vim/
+" set laststatus=2
