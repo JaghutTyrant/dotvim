@@ -269,6 +269,24 @@ let g:syntastic_c_checkers=['checkpatch']
 
 " END OF Synstastic Configuration
 "
+" Custom ILS Functions
+" Settings 2 spaces instead of tabs for shell scripts 
+function TwoSps()
+  setlocal tabstop=2
+  setlocal softtabstop=2
+  setlocal shiftwidth=2
+  setlocal expandtab
+  echom 'Tabs set to expand to 2 spaces'
+endfunction
+
+function FourSps()
+  setlocal tabstop=4
+  setlocal softtabstop=4
+  setlocal shiftwidth=4
+  setlocal expandtab
+  echom 'Tabs set to expand to 4 spaces'
+endfunction
+
 " Making powerline work
 " set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 " set  rtp+=/home/shadowthrone/.local/lib/python3.8/site-packages/powerline/bindings/vim/
