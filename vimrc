@@ -250,4 +250,5 @@ set  rtp+=/home/shadowthrone/.local/lib/python3.8/site-packages/powerline/bindin
 set laststatus=2
 
 " Some custom mappings
+" Maps Copy to Desktop X Clipboard to Ctrl+Shift+c
 vnoremap <C-S-c> "+y 
