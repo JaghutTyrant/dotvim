@@ -248,3 +248,6 @@ let g:syntastic_check_on_wq = 0
 " set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 set  rtp+=/home/shadowthrone/.local/lib/python3.8/site-packages/powerline/bindings/vim/
 set laststatus=2
+
+" Some custom mappings
+vnoremap <C-S-c> "+y 
