@@ -251,4 +251,4 @@ set laststatus=2
 
 " Some custom mappings
 " Maps Copy to Desktop X Clipboard to Ctrl+Shift+c
-vnoremap <C-S-c> "+y 
+vnoremap <C-S-c> "+y
