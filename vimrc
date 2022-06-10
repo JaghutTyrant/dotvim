@@ -298,3 +298,7 @@ endfunction
 " POWERLINE CONFIG
 " set  rtp+=/usr/lib/python3/dist-packages/powerline/bindings/vim/
 " set laststatus=2
+
+" Some custom mappings
+" Maps Copy to Desktop X Clipboard to Ctrl+Shift+c
+vnoremap <C-S-c> "+y
