@@ -243,6 +243,14 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+" Syntastic Checkers configuration
+" c-gcc checker specific configuration
+let g:syntastic_c_remove_include_errors = 1
+" let g:syntastic_c_no_default_include_dirs = 1
+let g:syntastic_c_compiler = "gcc"
+let g:syntastic_c_compiler_options = "-std=gnu89"
+let g:syntastic_c_checkers=['checkpatch']
+
 
 " Making powerline work
 " set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
