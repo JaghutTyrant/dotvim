@@ -170,7 +170,6 @@ call pathogen#helptags()
 
 " ###################### PYTHONG IDE SETUP ###################################
 
-set laststatus=2
 
 
 " Settings for ctrlp
@@ -254,9 +253,10 @@ let g:syntastic_c_checkers=['checkpatch']
 
 " Making powerline work
 " set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
-set  rtp+=/home/shadowthrone/.local/lib/python3.8/site-packages/powerline/bindings/vim/
-set laststatus=2
 
 " Some custom mappings
 " Maps Copy to Desktop X Clipboard to Ctrl+Shift+c
 vnoremap <C-S-c> "+y
+" POWERLINE CONFIG
+set  rtp+=/home/shadowthrone/.local/lib/python3.10/site-packages/powerline/bindings/vim/
+set laststatus=2
