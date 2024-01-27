@@ -68,8 +68,11 @@ map <leader>m <esc>:tabnext<CR>
 
 
 " easier movement of codeblocs
-vnoremap < <gv " better indentation
-vnoremap > >gv " better indentation
+" better indentation
+vnoremap < <gv
+" better indentation
+vnoremap > >gv
+
 " the diffrence with the original one is that this one makes the block remain highlighted for multiple indentation or de-indentation
 
 
